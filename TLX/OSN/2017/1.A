@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int n,sd,sm,p[100010],k[100010],l[100010],res;
+string s;
+
+void rec(int a,int b,int c){
+	if(a==n){
+		if(b>=sm){
+			res=min(res,c);
+		}
+	}
+	else{
+		if(b>=p[a]){
+			rec(a+1,b,c+k[a]);
+			rec(a+1,b+1,c+l[a]);
+		}
+	}
+	
+}
+
+int main(){
+	cin>>s;
+	cin>>n>>sd>>sm;
+	res=1000000000;
+	for(int i=1;i<n;i++){
+		cin>>p[i]>>k[i]>>l[i];
+	}
+	rec(1,sd,0);
+	if(res==1000000000){
+		res=-1;
+	}
+	cout<<res<<endl;
+
+}
