@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IEEEXtreme 14.0 - The Last of Us</title>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./clicker.js"></script>
+    <script type="text/javascript" src="./game.js"></script>
+    <script type="text/javascript" src="./common.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+
+    <!-- load areas -->
+    <script type="text/javascript" src="./areas/area-0-sample.js"></script>
+    <script type="text/javascript" src="./areas/area-1.js"></script>
+    <script type="text/javascript" src="./areas/area-2.js"></script>
+    <script type="text/javascript" src="./areas/area-3.js"></script>
+    <script type="text/javascript" src="./areas/area-4.js"></script>
+    <script type="text/javascript" src="./areas/area-5.js"></script>
+    <script type="text/javascript" src="./areas/area-6.js"></script>
+    <script type="text/javascript" src="./areas/area-7.js"></script>
+    <script type="text/javascript" src="./areas/area-8.js"></script>
+    <script type="text/javascript" src="./areas/area-9.js"></script>
+    <script type="text/javascript" src="./areas/area-special-1.js"></script>
+    <script type="text/javascript" src="./areas/area-special-2.js"></script>
+    <script type="text/javascript" src="./areas/area-special-3.js"></script>
+    <script type="text/javascript" src="./areas/area-special-4.js"></script>
+    <script type="text/javascript" src="./areas/area-special-5.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <noscript>Please enable JavaScript in the browser settings.</noscript>
+    <div id="header">
+      <p>
+        <label>Area: </label>
+        <select id="area-select"></select>
+        <button id="start">Start</button>
+      </p>
+      <p>Bricks: <span id="bricks"></span> <button id="throw-brick">Throw</button></p>
+      <p id="message"></p>
+    </div>
+    <div id="map">
+      <div id="interactive"></div>
+      <canvas id="canvas">
+      </canvas>
+    </div>
+  </body>
+</html>

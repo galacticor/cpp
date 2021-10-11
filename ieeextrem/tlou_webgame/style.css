@@ -1,0 +1,36 @@
+#header {
+  position: fixed;
+}
+
+#map {
+  position: absolute;
+  top: 150px;
+  width: 90%;
+  height: calc(100% - 180px);
+  white-space: nowrap;
+}
+
+.interactive-cell {
+  width: 30px;
+  height: 30px;
+  border: none;
+  position: absolute;
+}
+
+.interactive-cell.bad {
+  background-color: rgba(255, 0, 0, .5);
+}
+
+.interactive-cell.highlighted {
+  background-color: rgba(0, 0, 255, .5);
+  cursor: pointer;
+}
+
+.interactive-cell.highlighted:hover {
+  background-color: rgba(0, 0, 255, .75);
+}
+
+.interactive-cell.success {
+  background-color: rgba(0, 255, 0, .5);
+  cursor: pointer;
+}
